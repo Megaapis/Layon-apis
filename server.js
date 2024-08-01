@@ -7,6 +7,9 @@ const PORT = process.env.PORT || 10000;
 
 var mainrouter = require('./index.js'); // Importa o roteador principal
 
+// Define o diretório público para servir os arquivos estáticos
+app.use(express.static(path.join(__dirname)));
+
 var app = express();
 app.enable('trust proxy');
 app.use(morgan('dev'));
