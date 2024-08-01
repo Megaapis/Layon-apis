@@ -3,7 +3,7 @@ var express = require('express')
 var morgan = require('morgan');
 var secure = require('ssl-express-www')
 
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 10000
 
 var mainrouter = require('./apis')
 
