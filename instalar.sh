@@ -16,4 +16,8 @@ yarn add @bochilteam/scraper
 echo "Instalando o módulo got@11.8.5..."
 yarn add got@11.8.5
 
+# Instala a versão 2 do módulo node-fetch para compatibilidade com CommonJS
+echo "Instalando o módulo node-fetch@2..."
+yarn add node-fetch@2
+
 echo "Processo concluído!"
