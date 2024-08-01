@@ -59,14 +59,49 @@ const { soundl  } = require('./lib/api')
 const { GDriveDl, mediafiredl__ } = require('./lib/download.js');
 
 //===============================================//
-
 const app = express();
 const router = express.Router();
-const PORT = process.env.PORT || 3000;
+const PORT = `99999`;
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.set("view engine", "ejs");
+
+
+const getBuffer = async (url, options) => {
+	try {
+		options ? options : {}
+		const res = await axios({
+			method: "get",
+			url,
+			headers: {
+				'DNT': 1,
+				'Upgrade-Insecure-Request': 1
+			},
+			...options,
+			responseType: 'arraybuffer'
+		})
+		return res.data
+	} catch (err) {
+		return err
+	}
+}
+async function fetchJson (url, options) {
+    try {
+        options ? options : {}
+        const res = await axios({
+            method: 'GET',
+            url: url,
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36'
+            },
+            ...options
+        })
+        return res.data
+    } catch (err) {
+        return err
+    }
+}          
 //=============MENSAGENS RAPIDAS================//
 resposta = {
     semkey: {
@@ -224,12 +259,12 @@ const cor4 = corzinhas[Math.floor(Math.random() * (corzinhas.length))]
 
 const cor13 = corzinhas[Math.floor(Math.random() * (corzinhas.length))]	
 
-const banner = cfonts.render((`PEDROZZ|API`), {
+const banner = cfonts.render((`LAYON API`), {
 font: 'block',
 align: 'center',
 colors: [`whiteBright`, `red`]
 });  
-const banner3 = cfonts.render((`©2025 Copyright Dark Stars`), {
+const banner3 = cfonts.render((`©2025 Copyright World Ecletix company`), {
 font: 'console',
 align: 'center',
 gradient: ['red', 'magenta']
