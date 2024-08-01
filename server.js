@@ -1,10 +1,12 @@
-console.log('Iniciando....');
-var express = require('express');
-var morgan = require('morgan');
-var secure = require('ssl-express-www');
+console.log('Iniconst PORT = process.env.PORT || 3000;
 
-const PORT = process.env.PORT || 10000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});const PORT = process.env.PORT || 3000;
 
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 var mainrouter = require('./index.js'); // Importa o roteador principal
 
 // Define o diretório público para servir os arquivos estáticos
