@@ -1,11 +1,4 @@
-/*
-API by pedrozz_Mods
-Api feita com ❤️ e carinho por Pedrozz_Mods
-vão la no canal pra dar uma moral pls🥺
-Canal: pedrozz_Mods
-Instagram: pedrozz_13755
-Número: +556199317165
-*/
+
 api = process.cwd()
 __path = process.cwd()
 
@@ -34,14 +27,14 @@ const cfonts = require('cfonts');
 const chalk = require('chalk')
 const color = (text, color) => { return !color ? chalk.green(text) : chalk.keyword(color)(text) };
 
-var key = 'pedrozz13'
+var key = 'layonapis'
 //=============( CONFIGURAÇÕES DO BOT )=============//
 
 const config = JSON.parse(fs.readFileSync('./dono/config.json'));
 var {prefix, botName, fotomenu, numeroDono ,dono1, dono2, dono3, donoName, emoji, bannerName, linkp, criador, porta, wallpaperLink} = require('./dono/config.json')
-const usuariosAutorizados = ["pedrozz", "ritinha12", "Viruss"];
-var keyAdm = ["pedrozz1"];
-const adminList = ["pedrozz", "Ritinh4", "Viruss"];
+const usuariosAutorizados = ["comefemea"];
+var keyAdm = ["comefemea"];
+const adminList = ["comefemea"];
 bronxyKey = `pedrozz_Mods` 
 bronxyKey2 = `tiomaker8930`
     
@@ -69,7 +62,7 @@ const { GDriveDl, mediafiredl__ } = require('./lib/download.js');
 
 const app = express();
 const router = express.Router();
-const PORT = `8080`;
+const PORT = `10000`;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
