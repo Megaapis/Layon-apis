@@ -29,6 +29,7 @@
     "ip-address": "",
     "cheerio": "",
     "cookie-parser": "",
+    "fake-useragent": "",
     "assemblyai": "",
     "child_process": "",
     "crypto": "",
