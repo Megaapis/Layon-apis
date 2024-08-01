@@ -12,4 +12,8 @@ yarn install
 echo "Instalando o módulo @bochilteam/scraper..."
 yarn add @bochilteam/scraper
 
+# Instala a versão 11.8.5 do módulo got para compatibilidade com CommonJS
+echo "Instalando o módulo got@11.8.5..."
+yarn add got@11.8.5
+
 echo "Processo concluído!"
