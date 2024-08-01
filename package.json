@@ -21,7 +21,7 @@
     "@ffmpeg-installer/ffmpeg": "",
     "awesome-phonenumber": "",
     "axios": "",
-    "chalk": "",
+     "chalk": "^4.1.2",
     "cfonts": "",
     "cors": "",
     "ejs": "",
