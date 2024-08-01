@@ -8,4 +8,8 @@ rm -rf node_modules
 echo "Instalando as dependências do projeto..."
 yarn install
 
+# Instala o módulo @bochilteam/scraper
+echo "Instalando o módulo @bochilteam/scraper..."
+yarn add @bochilteam/scraper
+
 echo "Processo concluído!"
