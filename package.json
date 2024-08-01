@@ -27,6 +27,7 @@
     "express": "",
     "ip-address": "",
     "cheerio": "",
+    "cookie-parser": "",
     "child_process": "",
     "crypto": "",
     "canvacord": "",
