@@ -3616,8 +3616,11 @@ if (!resultadoDiminuicao) {return res.status(400).json({ error: "Saldo insuficie
 //===================[ PORTAS ]====================//
 
 app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+    console.log('Conectando...');
+    console.log("Servidor rodando em http://localhost:" + PORT);
 });
+
+module.exports = app;
 
 //==============( ÁREA DAS ATUALIZAÇÕES )==========\\
 fs.watchFile('./index.js', (curr, prev) => {
