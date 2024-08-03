@@ -990,12 +990,12 @@ font-size: 22px;
 
             
 <!---  <div class="preloader">
-   <img src="https://b.top4top.io/p_30686vbsz0.gif" alt="Preloader Image">
+   <img src="https://telegra.ph/file/900aeb35bce77d8e7e555.png" alt="Preloader Image">
 <!----- <div class="loader"></div>
 </div>--->
             
 <div class="cabeca">
-<h4><span style="color: red;">Dark - Api</span></h4>
+<h4><span style="color: red;">layon - Apis</span></h4>
 </div>
 <center><h1>Seja Bem-Vindo <%= user.username %>!</h1>
 <i class="fa fa-heart fa-2x" style="color: #FF0040;"></i><br></certer>
@@ -1008,8 +1008,8 @@ font-size: 22px;
 <div class="card-body">
 <h5 class="font-weight-bold text-danger text-uppercase"></h5>
 <div class="center-image">
-<a href="/perfil" alt="pedrozz: criador">
-<img class="round-image" src="<%= photoLink %>" alt="by Pedrozz">
+<a href="/perfil" alt="layonapis: criador">
+<img class="round-image" src="<%= photoLink %>" alt="by layonapis">
 </a>
 </div>  
 <br>
@@ -1021,8 +1021,8 @@ font-size: 22px;
 </br>
 <% if (user.adm === 'sim') { %>
 <div class="verimg">
-<a href="/perfil" alt="pedrozz: criador">
-<span style="color: green;">Administrador .</span><img class="round-image" src="https://i.top4top.io/p_306167nx30.gif" alt="by Pedrozz">
+<a href="/perfil" alt="layonapis: criador">
+<span style="color: green;">Administrador .</span><img class="round-image" src="https://telegra.ph/file/900aeb35bce77d8e7e555.png" alt="by layonapis">
 </a>
 </div>  
   <% } else { %>
@@ -1056,50 +1056,8 @@ VALORES
 
 
 
-<center><h3><span style="color: red;">ADMINISTRADORES</span></h3></center>
-<div class="container1">
-  <div class="tutotxt1">
-    <div class="tutotxtt1">
-      <center>
-        <% 
-          const topUsers = readUsersFromFile();
-          topUsers.sort((a, b) => {
-            if (a.adm === 'sim' && b.adm !== 'sim') return -1;
-            if (a.adm !== 'sim' && b.adm === 'sim') return 1;
-            if (a.premium === 'sim' && b.premium !== 'sim') return -1;
-            if (a.premium !== 'sim' && b.premium === 'sim') return 1;
-            if (a.premium === 'não' && b.premium === 'não') return b.request - a.request;
-            return 0;
-          }).slice(0, 10).forEach(function(user) { 
-        %>
-        <br>
-        <div class="user-info">
-          <img class="user-photo" src="<%= user.photoLink %>" alt="Foto do Usuário">
-          <div class="user-details">
-            <% if (user.adm === 'sim') { %>
-            <div class="verimg">
-              <h2><span style="color: green;">Administrador</span></h2>
-            </div>  
-            <% } %>
-            <% if (user.premium === 'sim') { %>
-            <div class="verimg">
-              <a href="/perfil" alt="<%= user.username %>: criador">
-                <span style="color: green;">PREMIUM .</span><img class="round-image" src="https://i.top4top.io/p_306167nx30.gif" alt="by Pedrozz">
-              </a>
-            </div>  
-            <% } else { %>
-            <h3><span style="color: red;">Usuário Grátis</span></h3>
-            <% } %>
-            <div class="user-name">Usuário: <%= user.username %></div>
-            <div class="user-requests">Total de Requests: <%= user.request %></div>
-          </div>
-        </div>
-        <hr><br>
-        <% }); %>
-      </center>
-    </div>
-  </div>
-</div>
+
+              
 
 <!-- Javascript -->
 
@@ -1110,7 +1068,7 @@ VALORES
 <div class="d-sm-flex justify-content-center justify-content-sm-between">
 
 <h2><span class="text-muted d-block text-center text-sm-left d-sm-inline-block"></span></h3>
-<h3>Copyright © 2024 <span style="color: red;">Dark Stars</span></h3>
+<h3>Copyright © 2024 <span style="color: red;">layon apis</span></h3>
 </div>
 </footer>
 <script>
